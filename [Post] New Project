@@ -1,0 +1,73 @@
+{
+			"name": "New Project",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkUzQUJEMzAxNzdEMEZDNjU2RDg4MDRFOTQ2RUJFOTdCNTJBRUQ2MzhSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjQ2dlRBWGZRX0dWdGlBVHBSdXZwZTFLdTFqZyJ9.eyJuYmYiOjE2NjA0OTgzODYsImV4cCI6MTY2MDUwMTk4NiwiaXNzIjoiaHR0cHM6Ly9hdXRoLnRpbWV0dGEuY29tIiwiYXVkIjoid29ya3BvaW50LWFwaSIsImNsaWVudF9pZCI6ImV4dGVybmFsIiwic3ViIjoiTmVzdGVyb3ZBQHRlc3QtdGFzay5ydSIsImF1dGhfdGltZSI6MTY2MDQ5ODM4NiwiaWRwIjoibG9jYWwiLCJuYW1lIjoi0JDQu9C10LrRgdCw0L3QtNGAINCd0LXRgdGC0LXRgNC-0LIiLCJ0ZW5hbnQiOiJ0ZXN0LXRhc2sucnUiLCJqdGkiOiJDMURBNUVENEFGRDRFMzgxMEQ2MTkwOEFDQkQwMEYwQiIsImlhdCI6MTY2MDQ5ODM4Niwic2NvcGUiOlsiYWxsIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdfQ.IKYmcz4b_sy71FNWpLZM9Aaph39-RpSSLGRxyCc7DublSvK81oir04ArrmntzqudJnt6X_0RSzvqPBqOs3dTXQ6QffQ9jMov61zxPghC1BYCQPgk93PQhqQ8n9ZTVEqqaPt3vwjx669cEpQLFZXis_f3-rMCxFgWrMK1pR-8Db4d0xgjnvpFQVa3yDDaXFXbJjpi0X1KcP8V4C9mRp0tD11Uj1HDpF4H2i7uDgOcn0mAqkJXyekmRG6rsFKDSBFyTCzAXbqfDYD21DNcYpzm3rh-aMPqGa37MNplyZXQojnJ8bvQ-to5punRFwJCJ--EzzvqiQsjX185I_sve_kyBg"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Khamitskiy Vladislav{{$timestamp}}\",\r\n    \"billingTypeId\":\"e87e0e6b-c034-45ac-8b74-bd0256f3f535\",\r\n    \"managerId\": \"bcd753cc-0b80-47ae-a471-6ff7f06010e1\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://api.timetta.com/odata/Projects"
+			},
+			"response": {
+			    "@odata.context": "https://api.timetta.com/odata/$metadata#Projects/$entity",
+			    "startDate": null,
+			    "endDate": null,
+			    "dateValue1": null,
+			    "dateValue2": null,
+			    "dateValue3": null,
+			    "dateValue4": null,
+			    "dateValue5": null,
+			    "code": null,
+			    "description": null,
+			    "externalUrl": null,
+			    "skipManagerApprove": false,
+			    "allowTimeEntry": false,
+			    "stateId": "9752fc91-714a-414f-9c03-8a3a1d6cce06",
+			    "billingTypeId": "e87e0e6b-c034-45ac-8b74-bd0256f3f535",
+			    "managerId": "bcd753cc-0b80-47ae-a471-6ff7f06010e1",
+			    "organizationId": null,
+			    "programId": null,
+			    "revenueRecognitionMethodId": null,
+			    "sourceProjectId": null,
+			    "rowVersion": 14182688,
+			    "stringValue1": null,
+			    "stringValue2": null,
+			    "stringValue3": null,
+			    "stringValue4": null,
+			    "stringValue5": null,
+			    "decimalValue1": null,
+			    "decimalValue2": null,
+			    "decimalValue3": null,
+			    "decimalValue4": null,
+			    "decimalValue5": null,
+			    "lookupValue1Id": null,
+			    "lookupValue2Id": null,
+			    "lookupValue3Id": null,
+			    "lookupValue4Id": null,
+			    "lookupValue5Id": null,
+			    "integerValue1": null,
+			    "integerValue2": null,
+			    "integerValue3": null,
+			    "integerValue4": null,
+			    "integerValue5": null,
+			    "name": "Khamitskiy Vladislav1661551471",
+			    "createdById": "bcd753cc-0b80-47ae-a471-6ff7f06010e1",
+			    "modifiedById": "bcd753cc-0b80-47ae-a471-6ff7f06010e1",
+			    "id": "67cd9b45-24ab-45d3-99c7-37fc10f0e423",
+			    "created": "2022-08-27T01:04:31.3568986+03:00",
+			    "modified": "2022-08-26T22:04:31.3453585Z",
+			    "isActive": true
+			}
+		}
