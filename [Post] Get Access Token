@@ -1,0 +1,28 @@
+{
+			"name": "Get Access Token",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": {
+						"accessTokenUrl": "https://auth.timetta.com/connect/token",
+						"tokenName": "Timetta Token",
+						"scope": "all offline_access",
+						"clientId": "external",
+						"password": "gG9NfM",
+						"username": "NesterovA@test-task.ru",
+						"grant_type": "password_credentials",
+						"addTokenTo": "header"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"url": "https://auth.timetta.com/connect/token"
+			},
+			"response": {
+    			"access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkUzQUJEMzAxNzdEMEZDNjU2RDg4MDRFOTQ2RUJFOTdCNTJBRUQ2MzhSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjQ2dlRBWGZRX0dWdGlBVHBSdXZwZTFLdTFqZyJ9.eyJuYmYiOjE2NjE1NTA3ODIsImV4cCI6MTY2MTU1NDM4MiwiaXNzIjoiaHR0cHM6Ly9hdXRoLnRpbWV0dGEuY29tIiwiYXVkIjoid29ya3BvaW50LWFwaSIsImNsaWVudF9pZCI6ImV4dGVybmFsIiwic3ViIjoiTmVzdGVyb3ZBQHRlc3QtdGFzay5ydSIsImF1dGhfdGltZSI6MTY2MTU1MDc4MiwiaWRwIjoibG9jYWwiLCJuYW1lIjoi0JDQu9C10LrRgdCw0L3QtNGAINCd0LXRgdGC0LXRgNC-0LIiLCJ0ZW5hbnQiOiJ0ZXN0LXRhc2sucnUiLCJqdGkiOiIzQjg2Qjc2RjlBRDFGODk3MTc3NzU4MkE3OUYzQkZDRiIsImlhdCI6MTY2MTU1MDc4Miwic2NvcGUiOlsiYWxsIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdfQ.qx4BxDgwyAU8eOlhV844_c-SI9S-gzKlwIOaOa7vyUjP46OoMdimbWPs4922FfwW3Z1wadLMLbkHGL-gXYm_v3skEs6tnQa-sPGnwb5wUlmKy0lEsAP17IiFXpvGaJMx4b6qP2N-7wrCvS6IwyiYWCnJ_TPjrZt8J1f_HSCZ2HwK3xAkgMHx1I106iS364eiZm8iAsepV65vxwpoajBbaz3_8KlVLVCObYa-1wkBLM_SUHFApfbYV9LcYaiAN1vcbuh-btf-3omsLMzvbM2U7YXJqk_iLFXAiRc5uiIBjNF62P0BUw-A4hId6AmtGvKkXjcZKccBiG7Zk4ANQVvnJw",
+    			"expires_in": 3600,
+    			"token_type": "Bearer",
+    			"refresh_token": "1D66BBA7D3AB27CF65418C6D8AB12348D66A007B7F8F2DC1ABE2D5C6350150BD",
+    			"scope": "all offline_access"
+						}
+		}
