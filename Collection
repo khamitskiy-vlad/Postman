@@ -1,0 +1,183 @@
+{
+  "Id": 1,
+  "_comment": "LINK TO MY POSTMAN COLLECTION: https://www.postman.com/khamitskiyvladislav/workspace/test-task/collection/22823032-8d143bcb-6479-4501-94d9-530c6f6aa56f?action=share&creator=22823032"
+}
+
+{
+	"info": {
+		"_postman_id": "8d143bcb-6479-4501-94d9-530c6f6aa56f",
+		"name": "app.timetta.com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "22823032"
+	},
+	"item": [
+		{
+			"name": "Get Access Token",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": {
+						"accessTokenUrl": "https://auth.timetta.com/connect/token",
+						"tokenName": "Timetta Token",
+						"scope": "all offline_access",
+						"clientId": "external",
+						"password": "gG9NfM",
+						"username": "NesterovA@test-task.ru",
+						"grant_type": "password_credentials",
+						"addTokenTo": "header"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"url": "https://auth.timetta.com/connect/token"
+			},
+			"response": {
+    			"access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkUzQUJEMzAxNzdEMEZDNjU2RDg4MDRFOTQ2RUJFOTdCNTJBRUQ2MzhSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjQ2dlRBWGZRX0dWdGlBVHBSdXZwZTFLdTFqZyJ9.eyJuYmYiOjE2NjE1NTA3ODIsImV4cCI6MTY2MTU1NDM4MiwiaXNzIjoiaHR0cHM6Ly9hdXRoLnRpbWV0dGEuY29tIiwiYXVkIjoid29ya3BvaW50LWFwaSIsImNsaWVudF9pZCI6ImV4dGVybmFsIiwic3ViIjoiTmVzdGVyb3ZBQHRlc3QtdGFzay5ydSIsImF1dGhfdGltZSI6MTY2MTU1MDc4MiwiaWRwIjoibG9jYWwiLCJuYW1lIjoi0JDQu9C10LrRgdCw0L3QtNGAINCd0LXRgdGC0LXRgNC-0LIiLCJ0ZW5hbnQiOiJ0ZXN0LXRhc2sucnUiLCJqdGkiOiIzQjg2Qjc2RjlBRDFGODk3MTc3NzU4MkE3OUYzQkZDRiIsImlhdCI6MTY2MTU1MDc4Miwic2NvcGUiOlsiYWxsIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdfQ.qx4BxDgwyAU8eOlhV844_c-SI9S-gzKlwIOaOa7vyUjP46OoMdimbWPs4922FfwW3Z1wadLMLbkHGL-gXYm_v3skEs6tnQa-sPGnwb5wUlmKy0lEsAP17IiFXpvGaJMx4b6qP2N-7wrCvS6IwyiYWCnJ_TPjrZt8J1f_HSCZ2HwK3xAkgMHx1I106iS364eiZm8iAsepV65vxwpoajBbaz3_8KlVLVCObYa-1wkBLM_SUHFApfbYV9LcYaiAN1vcbuh-btf-3omsLMzvbM2U7YXJqk_iLFXAiRc5uiIBjNF62P0BUw-A4hId6AmtGvKkXjcZKccBiG7Zk4ANQVvnJw",
+    			"expires_in": 3600,
+    			"token_type": "Bearer",
+    			"refresh_token": "1D66BBA7D3AB27CF65418C6D8AB12348D66A007B7F8F2DC1ABE2D5C6350150BD",
+    			"scope": "all offline_access"
+						}
+		},
+		{
+			"name": "Query ProjectBillingTypes",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkUzQUJEMzAxNzdEMEZDNjU2RDg4MDRFOTQ2RUJFOTdCNTJBRUQ2MzhSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjQ2dlRBWGZRX0dWdGlBVHBSdXZwZTFLdTFqZyJ9.eyJuYmYiOjE2NjA0OTgzODYsImV4cCI6MTY2MDUwMTk4NiwiaXNzIjoiaHR0cHM6Ly9hdXRoLnRpbWV0dGEuY29tIiwiYXVkIjoid29ya3BvaW50LWFwaSIsImNsaWVudF9pZCI6ImV4dGVybmFsIiwic3ViIjoiTmVzdGVyb3ZBQHRlc3QtdGFzay5ydSIsImF1dGhfdGltZSI6MTY2MDQ5ODM4NiwiaWRwIjoibG9jYWwiLCJuYW1lIjoi0JDQu9C10LrRgdCw0L3QtNGAINCd0LXRgdGC0LXRgNC-0LIiLCJ0ZW5hbnQiOiJ0ZXN0LXRhc2sucnUiLCJqdGkiOiJDMURBNUVENEFGRDRFMzgxMEQ2MTkwOEFDQkQwMEYwQiIsImlhdCI6MTY2MDQ5ODM4Niwic2NvcGUiOlsiYWxsIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdfQ.IKYmcz4b_sy71FNWpLZM9Aaph39-RpSSLGRxyCc7DublSvK81oir04ArrmntzqudJnt6X_0RSzvqPBqOs3dTXQ6QffQ9jMov61zxPghC1BYCQPgk93PQhqQ8n9ZTVEqqaPt3vwjx669cEpQLFZXis_f3-rMCxFgWrMK1pR-8Db4d0xgjnvpFQVa3yDDaXFXbJjpi0X1KcP8V4C9mRp0tD11Uj1HDpF4H2i7uDgOcn0mAqkJXyekmRG6rsFKDSBFyTCzAXbqfDYD21DNcYpzm3rh-aMPqGa37MNplyZXQojnJ8bvQ-to5punRFwJCJ--EzzvqiQsjX185I_sve_kyBg"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://api.timetta.com/odata/ProjectBillingTypes"
+			},
+			"response": {
+    			"@odata.context": "https://api.timetta.com/odata/$metadata#ProjectBillingTypes",
+    			"value": [
+        			{
+            			"code": "NonBillable",
+            			"name": "Неоплачиваемый",
+            			"id": "4d1a525f-3abc-4871-a64a-349c1dd3cabf",
+            			"created": "2022-06-29T11:14:47.634158Z",
+            			"modified": "2022-08-26T08:47:56.761194Z",
+            			"isActive": true
+        			},
+        			{
+           			 	"code": "TM",
+            			"name": "Время и затраты",
+            			"id": "584dddc1-94df-43b2-b3f3-372c02fcb016",
+            			"created": "2022-06-29T11:14:47.634164Z",
+            			"modified": "2022-08-26T08:47:56.761194Z",
+            			"isActive": true
+        			},
+        			{
+            			"code": "FixedBid",
+            			"name": "Фиксированная стоимость",
+            			"id": "e87e0e6b-c034-45ac-8b74-bd0256f3f535",
+            			"created": "2022-06-29T11:14:47.634166Z",
+            			"modified": "2022-08-26T08:47:56.761194Z",
+            			"isActive": true
+        			}
+    			]
+			}
+		},
+		{
+			"name": "New Project",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkUzQUJEMzAxNzdEMEZDNjU2RDg4MDRFOTQ2RUJFOTdCNTJBRUQ2MzhSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjQ2dlRBWGZRX0dWdGlBVHBSdXZwZTFLdTFqZyJ9.eyJuYmYiOjE2NjA0OTgzODYsImV4cCI6MTY2MDUwMTk4NiwiaXNzIjoiaHR0cHM6Ly9hdXRoLnRpbWV0dGEuY29tIiwiYXVkIjoid29ya3BvaW50LWFwaSIsImNsaWVudF9pZCI6ImV4dGVybmFsIiwic3ViIjoiTmVzdGVyb3ZBQHRlc3QtdGFzay5ydSIsImF1dGhfdGltZSI6MTY2MDQ5ODM4NiwiaWRwIjoibG9jYWwiLCJuYW1lIjoi0JDQu9C10LrRgdCw0L3QtNGAINCd0LXRgdGC0LXRgNC-0LIiLCJ0ZW5hbnQiOiJ0ZXN0LXRhc2sucnUiLCJqdGkiOiJDMURBNUVENEFGRDRFMzgxMEQ2MTkwOEFDQkQwMEYwQiIsImlhdCI6MTY2MDQ5ODM4Niwic2NvcGUiOlsiYWxsIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdfQ.IKYmcz4b_sy71FNWpLZM9Aaph39-RpSSLGRxyCc7DublSvK81oir04ArrmntzqudJnt6X_0RSzvqPBqOs3dTXQ6QffQ9jMov61zxPghC1BYCQPgk93PQhqQ8n9ZTVEqqaPt3vwjx669cEpQLFZXis_f3-rMCxFgWrMK1pR-8Db4d0xgjnvpFQVa3yDDaXFXbJjpi0X1KcP8V4C9mRp0tD11Uj1HDpF4H2i7uDgOcn0mAqkJXyekmRG6rsFKDSBFyTCzAXbqfDYD21DNcYpzm3rh-aMPqGa37MNplyZXQojnJ8bvQ-to5punRFwJCJ--EzzvqiQsjX185I_sve_kyBg"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Khamitskiy Vladislav{{$timestamp}}\",\r\n    \"billingTypeId\":\"e87e0e6b-c034-45ac-8b74-bd0256f3f535\",\r\n    \"managerId\": \"bcd753cc-0b80-47ae-a471-6ff7f06010e1\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://api.timetta.com/odata/Projects"
+			},
+			"response": {
+			    "@odata.context": "https://api.timetta.com/odata/$metadata#Projects/$entity",
+			    "startDate": null,
+			    "endDate": null,
+			    "dateValue1": null,
+			    "dateValue2": null,
+			    "dateValue3": null,
+			    "dateValue4": null,
+			    "dateValue5": null,
+			    "code": null,
+			    "description": null,
+			    "externalUrl": null,
+			    "skipManagerApprove": false,
+			    "allowTimeEntry": false,
+			    "stateId": "9752fc91-714a-414f-9c03-8a3a1d6cce06",
+			    "billingTypeId": "e87e0e6b-c034-45ac-8b74-bd0256f3f535",
+			    "managerId": "bcd753cc-0b80-47ae-a471-6ff7f06010e1",
+			    "organizationId": null,
+			    "programId": null,
+			    "revenueRecognitionMethodId": null,
+			    "sourceProjectId": null,
+			    "rowVersion": 14182688,
+			    "stringValue1": null,
+			    "stringValue2": null,
+			    "stringValue3": null,
+			    "stringValue4": null,
+			    "stringValue5": null,
+			    "decimalValue1": null,
+			    "decimalValue2": null,
+			    "decimalValue3": null,
+			    "decimalValue4": null,
+			    "decimalValue5": null,
+			    "lookupValue1Id": null,
+			    "lookupValue2Id": null,
+			    "lookupValue3Id": null,
+			    "lookupValue4Id": null,
+			    "lookupValue5Id": null,
+			    "integerValue1": null,
+			    "integerValue2": null,
+			    "integerValue3": null,
+			    "integerValue4": null,
+			    "integerValue5": null,
+			    "name": "Khamitskiy Vladislav1661551471",
+			    "createdById": "bcd753cc-0b80-47ae-a471-6ff7f06010e1",
+			    "modifiedById": "bcd753cc-0b80-47ae-a471-6ff7f06010e1",
+			    "id": "67cd9b45-24ab-45d3-99c7-37fc10f0e423",
+			    "created": "2022-08-27T01:04:31.3568986+03:00",
+			    "modified": "2022-08-26T22:04:31.3453585Z",
+			    "isActive": true
+			}
+		},
+		{
+			"name": "Patch Project",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkUzQUJEMzAxNzdEMEZDNjU2RDg4MDRFOTQ2RUJFOTdCNTJBRUQ2MzhSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjQ2dlRBWGZRX0dWdGlBVHBSdXZwZTFLdTFqZyJ9.eyJuYmYiOjE2NjA0OTgzODYsImV4cCI6MTY2MDUwMTk4NiwiaXNzIjoiaHR0cHM6Ly9hdXRoLnRpbWV0dGEuY29tIiwiYXVkIjoid29ya3BvaW50LWFwaSIsImNsaWVudF9pZCI6ImV4dGVybmFsIiwic3ViIjoiTmVzdGVyb3ZBQHRlc3QtdGFzay5ydSIsImF1dGhfdGltZSI6MTY2MDQ5ODM4NiwiaWRwIjoibG9jYWwiLCJuYW1lIjoi0JDQu9C10LrRgdCw0L3QtNGAINCd0LXRgdGC0LXRgNC-0LIiLCJ0ZW5hbnQiOiJ0ZXN0LXRhc2sucnUiLCJqdGkiOiJDMURBNUVENEFGRDRFMzgxMEQ2MTkwOEFDQkQwMEYwQiIsImlhdCI6MTY2MDQ5ODM4Niwic2NvcGUiOlsiYWxsIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdfQ.IKYmcz4b_sy71FNWpLZM9Aaph39-RpSSLGRxyCc7DublSvK81oir04ArrmntzqudJnt6X_0RSzvqPBqOs3dTXQ6QffQ9jMov61zxPghC1BYCQPgk93PQhqQ8n9ZTVEqqaPt3vwjx669cEpQLFZXis_f3-rMCxFgWrMK1pR-8Db4d0xgjnvpFQVa3yDDaXFXbJjpi0X1KcP8V4C9mRp0tD11Uj1HDpF4H2i7uDgOcn0mAqkJXyekmRG6rsFKDSBFyTCzAXbqfDYD21DNcYpzm3rh-aMPqGa37MNplyZXQojnJ8bvQ-to5punRFwJCJ--EzzvqiQsjX185I_sve_kyBg"
+					}
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"organizationId\": \"76797ca0-dfdc-4138-967a-73eccfb9341c\",\r\n    \"managerId\": \"14ef4f7f-05ae-4cd1-b6da-a3ad83db2c26\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://api.timetta.com/odata/Projects(67cd9b45-24ab-45d3-99c7-37fc10f0e423)"
+			},
+			"response": []
+		}
+	]
+}
