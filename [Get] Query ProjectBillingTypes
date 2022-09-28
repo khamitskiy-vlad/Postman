@@ -1,0 +1,43 @@
+{
+			"name": "Query ProjectBillingTypes",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkUzQUJEMzAxNzdEMEZDNjU2RDg4MDRFOTQ2RUJFOTdCNTJBRUQ2MzhSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjQ2dlRBWGZRX0dWdGlBVHBSdXZwZTFLdTFqZyJ9.eyJuYmYiOjE2NjA0OTgzODYsImV4cCI6MTY2MDUwMTk4NiwiaXNzIjoiaHR0cHM6Ly9hdXRoLnRpbWV0dGEuY29tIiwiYXVkIjoid29ya3BvaW50LWFwaSIsImNsaWVudF9pZCI6ImV4dGVybmFsIiwic3ViIjoiTmVzdGVyb3ZBQHRlc3QtdGFzay5ydSIsImF1dGhfdGltZSI6MTY2MDQ5ODM4NiwiaWRwIjoibG9jYWwiLCJuYW1lIjoi0JDQu9C10LrRgdCw0L3QtNGAINCd0LXRgdGC0LXRgNC-0LIiLCJ0ZW5hbnQiOiJ0ZXN0LXRhc2sucnUiLCJqdGkiOiJDMURBNUVENEFGRDRFMzgxMEQ2MTkwOEFDQkQwMEYwQiIsImlhdCI6MTY2MDQ5ODM4Niwic2NvcGUiOlsiYWxsIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdfQ.IKYmcz4b_sy71FNWpLZM9Aaph39-RpSSLGRxyCc7DublSvK81oir04ArrmntzqudJnt6X_0RSzvqPBqOs3dTXQ6QffQ9jMov61zxPghC1BYCQPgk93PQhqQ8n9ZTVEqqaPt3vwjx669cEpQLFZXis_f3-rMCxFgWrMK1pR-8Db4d0xgjnvpFQVa3yDDaXFXbJjpi0X1KcP8V4C9mRp0tD11Uj1HDpF4H2i7uDgOcn0mAqkJXyekmRG6rsFKDSBFyTCzAXbqfDYD21DNcYpzm3rh-aMPqGa37MNplyZXQojnJ8bvQ-to5punRFwJCJ--EzzvqiQsjX185I_sve_kyBg"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://api.timetta.com/odata/ProjectBillingTypes"
+			},
+			"response": {
+    			"@odata.context": "https://api.timetta.com/odata/$metadata#ProjectBillingTypes",
+    			"value": [
+        			{
+            			"code": "NonBillable",
+            			"name": "Неоплачиваемый",
+            			"id": "4d1a525f-3abc-4871-a64a-349c1dd3cabf",
+            			"created": "2022-06-29T11:14:47.634158Z",
+            			"modified": "2022-08-26T08:47:56.761194Z",
+            			"isActive": true
+        			},
+        			{
+           			 	"code": "TM",
+            			"name": "Время и затраты",
+            			"id": "584dddc1-94df-43b2-b3f3-372c02fcb016",
+            			"created": "2022-06-29T11:14:47.634164Z",
+            			"modified": "2022-08-26T08:47:56.761194Z",
+            			"isActive": true
+        			},
+        			{
+            			"code": "FixedBid",
+            			"name": "Фиксированная стоимость",
+            			"id": "e87e0e6b-c034-45ac-8b74-bd0256f3f535",
+            			"created": "2022-06-29T11:14:47.634166Z",
+            			"modified": "2022-08-26T08:47:56.761194Z",
+            			"isActive": true
+        			}
+    			]
+			}
+		}
