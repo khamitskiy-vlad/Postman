@@ -1,0 +1,24 @@
+{
+			"name": "Patch Project",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkUzQUJEMzAxNzdEMEZDNjU2RDg4MDRFOTQ2RUJFOTdCNTJBRUQ2MzhSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjQ2dlRBWGZRX0dWdGlBVHBSdXZwZTFLdTFqZyJ9.eyJuYmYiOjE2NjA0OTgzODYsImV4cCI6MTY2MDUwMTk4NiwiaXNzIjoiaHR0cHM6Ly9hdXRoLnRpbWV0dGEuY29tIiwiYXVkIjoid29ya3BvaW50LWFwaSIsImNsaWVudF9pZCI6ImV4dGVybmFsIiwic3ViIjoiTmVzdGVyb3ZBQHRlc3QtdGFzay5ydSIsImF1dGhfdGltZSI6MTY2MDQ5ODM4NiwiaWRwIjoibG9jYWwiLCJuYW1lIjoi0JDQu9C10LrRgdCw0L3QtNGAINCd0LXRgdGC0LXRgNC-0LIiLCJ0ZW5hbnQiOiJ0ZXN0LXRhc2sucnUiLCJqdGkiOiJDMURBNUVENEFGRDRFMzgxMEQ2MTkwOEFDQkQwMEYwQiIsImlhdCI6MTY2MDQ5ODM4Niwic2NvcGUiOlsiYWxsIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdfQ.IKYmcz4b_sy71FNWpLZM9Aaph39-RpSSLGRxyCc7DublSvK81oir04ArrmntzqudJnt6X_0RSzvqPBqOs3dTXQ6QffQ9jMov61zxPghC1BYCQPgk93PQhqQ8n9ZTVEqqaPt3vwjx669cEpQLFZXis_f3-rMCxFgWrMK1pR-8Db4d0xgjnvpFQVa3yDDaXFXbJjpi0X1KcP8V4C9mRp0tD11Uj1HDpF4H2i7uDgOcn0mAqkJXyekmRG6rsFKDSBFyTCzAXbqfDYD21DNcYpzm3rh-aMPqGa37MNplyZXQojnJ8bvQ-to5punRFwJCJ--EzzvqiQsjX185I_sve_kyBg"
+					}
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"organizationId\": \"76797ca0-dfdc-4138-967a-73eccfb9341c\",\r\n    \"managerId\": \"14ef4f7f-05ae-4cd1-b6da-a3ad83db2c26\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://api.timetta.com/odata/Projects(67cd9b45-24ab-45d3-99c7-37fc10f0e423)"
+			},
+			"response": []
+		}
